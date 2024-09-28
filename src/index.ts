@@ -1,14 +1,17 @@
 
-var express = require('express')
-const app = express()
-const port = 3000
+import express from 'express';
+import authRouter from './routes/authRouter';
 
-var auth = require('./routes/auth.ts');
+const app = express();
+const port = 3000;
 
-app.use('/auth', auth);
+// Middleware to parse JSON bodies
+app.use(express.json());
+
+// Use the auth router
+app.use('/auth', authRouter);
 
 app.listen(port, () => {
   console.log(`Example app listening on port localhost:${port}`)
 })
-
 
