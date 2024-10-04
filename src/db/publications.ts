@@ -4,7 +4,7 @@ export const posts: any[] = [
       user: {
         id: 1,
         name: 'Gabriela Salinas',
-        avatar: 'https://link_to_avatar_image.com/gabriela.png',
+        avatar: 'https://i.pravatar.cc/300',
         timestamp: '2024-10-03T10:30:00Z'
       },
       content: {
